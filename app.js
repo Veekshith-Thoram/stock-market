@@ -23,13 +23,14 @@ function calculateProfitOrLoss(initialPrice,totalPrice){
         profit = totalPrice-initialPrice;
         percentage = (profit/initialPrice)*100;
         outputEl.style.backgroundColor = "#ef4fa6";
-        message = `🤑Yay! you got a profit of ${profit} which equals to ${percentage}%🤑`
+        outputEl.style.fontFamily = "'Stylish', sans-serif";
+        message = `🤑Yay! you got a profit of Rs.${profit} which equals to ${percentage}%🤑`
     } else if(initialPrice>totalPrice){
         profit = initialPrice-totalPrice;
         percentage = (profit/initialPrice)*100;
         outputEl.style.backgroundColor = "white"; 
         outputEl.style.fontFamily = "'ZCOOL KuaiLe', cursive";
-        message = `😔Oops! you got a loss of ${profit} which equals to ${percentage}%😔`
+        message = `😔Oops! you got a loss of Rs.${profit} which equals to ${percentage}%😔`
     } else{
         message = "No Gain No Gain";
     }
