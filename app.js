@@ -28,6 +28,7 @@ function calculateProfitOrLoss(initialPrice,totalPrice){
         profit = initialPrice-totalPrice;
         percentage = (profit/initialPrice)*100;
         outputEl.style.backgroundColor = "white"; 
+        outputEl.style.fontFamily = "'ZCOOL KuaiLe', cursive";
         message = `😔Oops! you got a loss of ${profit} which equals to ${percentage}%😔`
     } else{
         message = "No Gain No Gain";
