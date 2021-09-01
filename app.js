@@ -22,7 +22,7 @@ function calculateProfitOrLoss(initialPrice,totalPrice){
     if(initialPrice<totalPrice){
         profit = totalPrice-initialPrice;
         percentage = (profit/initialPrice)*100;
-        outputEl.style.backgroundColor = "black";
+        outputEl.style.backgroundColor = "#ef4fa6";
         message = `🤑Yay! you got a profit of ${profit} which equals to ${percentage}%🤑`
     } else if(initialPrice>totalPrice){
         profit = initialPrice-totalPrice;
